@@ -1,0 +1,9 @@
+site_name: Robots10x Wiki
+site_url: https://qut-robotics-club.github.io/robot-docs
+repo_url: https://github.com/qut-robotics-club/robot-docs
+repo_name: qut-robotics-club/robot-docs
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo

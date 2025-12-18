@@ -7,3 +7,30 @@ theme:
   palette:
     scheme: slate
     primary: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Robots101:
+      - robots101/index.md
+  - Robots102:
+      - robots102/index.md
+      - Git Basics: robots102/version-control.md
+      - Project Management: robots102/project-management.md
+      - Interfacing with Hardware: robots102/hardware-interfacing.md
+      - Intermediate Linux: robots102/intermediate-linux.md
+      - Installing ROS: robots102/install-ros.md
+      - ROS with Python: robots102/ros-py.md
+      - ROS with C++: robots102/ros-cpp.md
+  - Resources: resources/index.md
+
+markdown_extensions:
+  - toc:
+      permalink: true

@@ -29,7 +29,10 @@ nav:
       - Installing ROS: robots102/install-ros.md
       - ROS with Python: robots102/ros-py.md
       - ROS with C++: robots102/ros-cpp.md
-  - Resources: resources/index.md
+  - Resources:
+      - resources/index.md
+      - Setting up new Pi's: resources/pi-setup.md
+      - Network Config: resources/network-setup.md
 
 markdown_extensions:
   - toc:

@@ -21,12 +21,15 @@ Before starting, set up the Pi WiFi network as shown [here](./network-setup.md).
 2. Wait for the Pi to finish booting - it should automatically connect to the wifi network, and this will be visible in either the Unifi web console or by the connected client count on the front of the Express increasing.
 3. Connect to the pi with SSH using its hostname (or IP from the console)
 4. Copy the contents of the `fix-time.sh` script into the Pi's terminal:
-    ```console
-    sudo sed -i -e "s/#NTP=/NTP=pool.ntp.org/g" /etc/systemd/timesyncd.conf
-    sudo timedatectl set-ntp False
-    sudo timedatectl set-ntp True
-    ```
-    This will set the Pi's clock so the next step will work.
+
+```console
+sudo sed -i -e "s/#NTP=/NTP=pool.ntp.org/g" /etc/systemd/timesyncd.conf
+sudo timedatectl set-ntp False
+sudo timedatectl set-ntp True
+```
+
+This will set the Pi's clock so the next step will work.
+
 5. Run the bootstrap script: `bash -c "$(curl https://raw.githubusercontent.com/qut-robotics-club/robot-software/refs/heads/main/setup/bootstrap.sh)"`
 6. Enter password for sudo when prompted.
 7. Select "n" when asked to reboot or not.

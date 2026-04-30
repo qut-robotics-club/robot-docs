@@ -22,9 +22,12 @@ Before starting, set up the Pi WiFi network as shown [here](./network-setup.md).
 3. Connect to the pi with SSH using its hostname (or IP from the console)
 4. Copy the contents of the `fix-time.sh` script into the Pi's terminal:
 
-    sudo sed -i -e "s/#NTP=/NTP=pool.ntp.org/g" /etc/systemd/timesyncd.conf
-    sudo timedatectl set-ntp False
-    sudo timedatectl set-ntp True
+
+``` console
+sudo sed -i -e "s/#NTP=/NTP=pool.ntp.org/g" /etc/systemd/timesyncd.conf
+sudo timedatectl set-ntp False
+sudo timedatectl set-ntp True
+```
 
 This will set the Pi's clock so the next step will work.
 From there:

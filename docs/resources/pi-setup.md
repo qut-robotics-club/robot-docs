@@ -22,16 +22,15 @@ Before starting, set up the Pi WiFi network as shown [here](./network-setup.md).
 3. Connect to the pi with SSH using its hostname (or IP from the console)
 4. Copy the contents of the `fix-time.sh` script into the Pi's terminal:
 
-```console
-sudo sed -i -e "s/#NTP=/NTP=pool.ntp.org/g" /etc/systemd/timesyncd.conf
-sudo timedatectl set-ntp False
-sudo timedatectl set-ntp True
-```
+    sudo sed -i -e "s/#NTP=/NTP=pool.ntp.org/g" /etc/systemd/timesyncd.conf
+    sudo timedatectl set-ntp False
+    sudo timedatectl set-ntp True
 
 This will set the Pi's clock so the next step will work.
+From there:
 
-5. Run the bootstrap script: `bash -c "$(curl https://raw.githubusercontent.com/qut-robotics-club/robot-software/refs/heads/main/setup/bootstrap.sh)"`
-6. Enter password for sudo when prompted.
-7. Select "n" when asked to reboot or not.
-8. If the script finishes execution (indicated by it printing out instructions at the end), reboot the Pi.
-9. If the display starts showing information, congratulations! The Pi is now ready to use. Note that if you had to press the power button for it to boot before, you may need to do so again. This is not required when powering from the HATs.
+1. Run the bootstrap script: `bash -c "$(curl https://raw.githubusercontent.com/qut-robotics-club/robot-software/refs/heads/main/setup/bootstrap.sh)"`
+2. Enter password for sudo when prompted.
+3. Select "n" when asked to reboot or not.
+4. If the script finishes execution (indicated by it printing out instructions at the end), reboot the Pi.
+5. If the display starts showing information, congratulations! The Pi is now ready to use. Note that if you had to press the power button for it to boot before, you may need to do so again. This is not required when powering from the HATs.

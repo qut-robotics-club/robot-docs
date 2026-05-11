@@ -13,3 +13,15 @@ Optionally, to bring up the network console:
 3. Enter the password (stored in club Bitwarden)
 4. Navigate to the Network tab (left button on the top bar)
 5. Navigate to the Client Devices section (the phone/laptop icon on the left)
+
+## Console Bringup
+
+From factory reset:
+1. Connect to the UniFi console
+2. Run setup as normal
+3. Under Network/Ports: Edit Port 1 (this should NOT be the WAN port)
+4. Under Advanced/Port Profile: Either select "Disabled" if it's there, or create a new port profile
+5. Name the profile "Disabled"
+6. Change the "Port" radio selector to "Disabled"
+7. Save
+8. Apply the profile to the port

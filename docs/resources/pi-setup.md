@@ -55,3 +55,8 @@ bash -c "$(curl https://raw.githubusercontent.com/qut-robotics-club/robot-softwa
 
 Camera:
 1. The **black** side of the cable goes towards the plastic tab
+
+## Modifying values
+
+The Pi imager creates a setup file from which several values are always loaded on boot: `/boot/firmware/user-data`.
+Some data, like the device hostname, should either be modified in this file, or `cloud-init` should be configured to not load it (see https://raspberrypi.stackexchange.com/a/153845 )

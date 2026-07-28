@@ -67,7 +67,7 @@ However, if you would prefer to keep it private, go to your GitHub account email
 If you've done that, you can now tell git your email:
 
 ```shell
-git config --global user.name "email GitHub gave you here"
+git config --global user.email "email GitHub gave you here"
 ```
 
 If you turned on using a private email address, use that here, otherwise use the primary address for your account.

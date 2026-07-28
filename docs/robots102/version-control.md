@@ -110,6 +110,17 @@ For more details and further terminology see [the Git docs](https://git-scm.com/
 
 ## Demonstrations!
 
+github requires setting a display name to start with
+**linux basics should be lesson 01**
+full name of vscode
+vscode installation
+go over cd/pwd/terminal/cmd:
+%userprofile%
+macos installation instructions (homebrew)
+git init -> initialise
+explain staging better
+have a messed up repo as an example?
+
 - Setting up a new repo on GitHub
 - Making a commit
 

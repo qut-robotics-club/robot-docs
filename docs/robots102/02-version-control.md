@@ -23,7 +23,7 @@ Imagine what that sort of pattern looks like when rather than a single folder or
 
 A _Version Control System_ (VCS) is the solution to this.
 The two most common implementations that you're likely to encounter are Git and Subversion (better known as SVN), but they have many overlapping concepts.
-This lesson will focus on Git, but most of this content is also applicable to SVN [^svn].
+This lesson will focus on Git, but most of this content is also applicable to SVN[^svn].
 Put simply, a VCS stores the state of your workspace at various fixed points called _commmits_ by tracking the _differences_ between those versions.
 You can then _push_ changes to a _remote_ server, and later _pull_ those changes on a different computer to synchronise the changes.
 
@@ -109,6 +109,17 @@ For more details and further terminology see [the Git docs](https://git-scm.com/
 - **Merging**: Combining the changes from two different _branches_ into a single branch.
 
 ## Demonstrations!
+
+github requires setting a display name to start with
+**linux basics should be lesson 01**
+full name of vscode
+vscode installation
+go over cd/pwd/terminal/cmd:
+%userprofile%
+macos installation instructions (homebrew)
+git init -> initialise
+explain staging better
+have a messed up repo as an example?
 
 - Setting up a new repo on GitHub
 - Making a commit

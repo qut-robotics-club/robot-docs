@@ -23,7 +23,7 @@ Imagine what that sort of pattern looks like when rather than a single folder or
 
 A _Version Control System_ (VCS) is the solution to this.
 The two most common implementations that you're likely to encounter are Git and Subversion (better known as SVN), but they have many overlapping concepts.
-This lesson will focus on Git, but most of this content is also applicable to SVN [^svn].
+This lesson will focus on Git, but most of this content is also applicable to SVN[^svn].
 Put simply, a VCS stores the state of your workspace at various fixed points called _commmits_ by tracking the _differences_ between those versions.
 You can then _push_ changes to a _remote_ server, and later _pull_ those changes on a different computer to synchronise the changes.
 

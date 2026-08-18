@@ -7,6 +7,7 @@ These skills are fundamental to navigating and interacting with modern software 
 
 A command line interface (or *CLI*) is a text-based interface which allows you to directly interact with your computer instead of using graphical windows.
 It's a core part of almost all software development, since:
+
 - Many tools operate primarily through the command line (`git`, `cmake`, `gcc`, ...)
 - All scripts (which includes most automation) run in the terminal
 - It's faster than a GUI for a lot of operations!

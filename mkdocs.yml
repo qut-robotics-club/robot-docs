@@ -23,7 +23,7 @@ nav:
   - Robots101:
       - robots101/index.md
   - Robots102:
-      - robots102/00-index.md
+      - robots102/index.md
       # basics: 0x-title.md
       # intermediate: 1x-title.md
       # ROS: 2x-title.md

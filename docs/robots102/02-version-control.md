@@ -36,7 +36,30 @@ Before digging into the main lesson, you'll need to install Git and sign up for 
 ### Git
 
 Download and install git from [here](https://git-scm.com/install/).
-If you're on Windows, you can optionally run `winget install Git.Git` in a terminal instead if you just want it installed with all the defaults.
+Some instructions for recommended MacOS and Windows methods are included below.
+
+#### Windows (Winget)
+
+If all you want is a default installation with all default settings, open a terminal and run:
+
+```powershell
+winget install Git.Git
+```
+
+#### MacOS (Homebrew)
+
+Install [Homebrew](https://brew.sh/) if you haven't already.
+Open your terminal and run the following to install it:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Once you have Homebrew, you can install Git:
+
+```bash
+brew install git
+```
 
 ### GitHub
 
@@ -45,6 +68,22 @@ To play with the remote features Git provides, you'll need to sign up with GitHu
 Do so [here](https://github.com/signup) - we recommend signing up with your email and a username rather than signing in with any linked services.
 
 We also _strongly_ recommend you install the [GitHub CLI](https://cli.github.com/), as this will make setting up Git much easier later.
+
+#### Windows (Winget)
+
+As before, run this in a terminal:
+
+```powershell
+winget install --id GitHub.cli
+```
+
+#### MacOS (Homebrew)
+
+Assuming you installed Homebrew earlier, run:
+
+```bash
+brew install gh
+```
 
 ## Getting Started
 
@@ -61,6 +100,7 @@ Whatever you provide to Git should match the display name you've given to GitHub
 Git also needs your email.
 If you're OK with it being semi-publicly accessible, you can use your actual email that you signed up to GitHub with here.
 However, if you would prefer to keep it private, go to your GitHub account email settings [here](https://github.com/settings/emails), and:
+
 1. Turn on "Keep my email addresses private" and copy the email address it gives you in this box for later.
 2. Optionally, check "Block command line pushes that expose my email" as well.
 
@@ -75,6 +115,7 @@ If you turned on using a private email address, use that here, otherwise use the
 At this point, Git knows who you are, but GitHub doesn't! (Locally, anyway.)
 This is where installing the GitHub CLI is important, as it can _configure_ Git with the required credentials to interact with your repositories.
 To do so, run the following in a terminal and follow the instructions:
+
 ```shell
 gh auth login -w -p https
 ```
@@ -83,6 +124,18 @@ At this point, you're all ready to go!
 However, we recommend changing the following configuration for quality of life at this point:
 
 ```shell
+git config --global push.autosetupremote true
+git config --global pull.rebase false
+```
+
+#### Example
+
+In full, this might look like:
+
+```shell
+git config --global user.name "Foo Bar"
+git config --global user.email "12345678+FooBar@users.noreply.github.com"
+gh auth login -w -p https
 git config --global push.autosetupremote true
 git config --global pull.rebase false
 ```
@@ -111,14 +164,17 @@ For more details and further terminology see [the Git docs](https://git-scm.com/
 ## Demonstrations!
 
 github requires setting a display name to start with
+
 **linux basics should be lesson 01**
+
 full name of vscode
+
 vscode installation
-go over cd/pwd/terminal/cmd:
-%userprofile%
-macos installation instructions (homebrew)
+
 git init -> initialise
+
 explain staging better
+
 have a messed up repo as an example?
 
 - Setting up a new repo on GitHub

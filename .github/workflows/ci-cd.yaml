@@ -1,4 +1,4 @@
-name: ci
+name: ci-cd
 on:
   push:
   pull_request:
@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - name: Spell Check Repo
+        uses: crate-ci/typos@v1.50.0
       - uses: actions/setup-python@v7
         with:
           python-version-file: "pyproject.toml"
@@ -21,4 +23,8 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked --all-extras --dev
       - name: Build MkDocs site
-        run: uv run mkdocs build --clean
+        run: uv run mkdocs build
+      # only run on push to main, not on pull requests, which would fail
+      - name: Deploy MkDocs site to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: uv run mkdocs gh-deploy --force

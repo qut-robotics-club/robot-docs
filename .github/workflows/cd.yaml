@@ -23,5 +23,3 @@ jobs:
           enable-cache: true
       - name: Install dependencies
         run: uv sync --locked --all-extras --dev
-      - name: Deploy MkDocs site to GitHub Pages
-        run: uv run mkdocs gh-deploy --force

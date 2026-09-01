@@ -5,7 +5,7 @@
 *[PR]: Pull Request
 *[CI/CD]: Continuous Integration/Continuous Deployment
 *[CI]: Continuous Integration
-*[CD]: Continuous Deployment
+*[CD]: Continuous Deployment or Continuous Delivery
 *[repo]: Repository. A project tracked using VCS.
 *[CWD]: Current Working Directory
 *[flag]: A true/false option which changes how a command-line program behaves.

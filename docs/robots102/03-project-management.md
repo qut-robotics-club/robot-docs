@@ -149,3 +149,14 @@ You can usually mitigate, if not entirely avoid, conflicts with the following pr
 
 Although Git uses a specific text-based format to mark merge conflicts, most IDEs (VSCode included) provide a graphical resolution tool to help you through it.
 Additionally, programs like `delta` (see [Git setup](./02-version-control.md#making-git-fancy)) can provide a much nicer terminal experience too.
+
+## Recommended Settings
+
+In GitHub, these are some of the most important settings we recommend applying.
+Everything here can be found under the settings tab of the repo, and the headers are the row you can find them in.
+
+### General
+
+- Turn on "Always suggest updating pull request branches"
+- Turn on "Allow auto-merge"
+- Turn on "Automatically delete head branches"

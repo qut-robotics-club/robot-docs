@@ -90,7 +90,7 @@ In the case of this very docs website, its CD pipeline automatically uploads it 
 **Caveats:**
 
 - The deployment process must be idempotent (safe to run multiple times).
-- Initial deployments should be closely monitured until they're thoroughly proven.
+- Initial deployments should be closely monitored until they're thoroughly proven.
 
 ### Branch Protection Rules
 

@@ -1,0 +1,12 @@
+[default]
+extend-ignore-re = [
+    # Ignore lines that end with `# spellchecker:disable-line`
+    "(?Rm)^.*(#|//)\\s*spellchecker:disable-line$",
+    # Ignore the line after `# spellchecker:ignore-next-line`:
+    "(#|//)\\s*spellchecker:ignore-next-line\\n.*",
+    # Ignore blocks between `# spellchecker:off` and `# spellchecker:on`
+    "(?s)(#|//)\\s*spellchecker:off.*?\\n\\s*(#|//)\\s*spellchecker:on",
+    # ignore words with bolded or italic sub-sections
+    "\\w+[_\\*]{1,2}\\w+[_\\*]{1,2}",
+    "[_\\*]{1,2}\\w+[_\\*]{1,2}\\w+",
+]

@@ -259,3 +259,12 @@ For that, you need to add the `-r` (recursive) flag:
 ```bash
 rm -r path/to/directory
 ```
+
+## Exit Codes
+
+All programs, once they exit (either of their own volition, or By the Power of Task Manager) return what's called an _exit code_ or _return code_.
+This is a (usually) positive integer which gives some information about how the program exited.
+The default, 0, means the program exited successfully! (Hopefully. Some programs lie.)
+Anything else means some form of error, or more rarely, a warning.
+Exit code 1 is a fairly generic "catch-all" for just "something went wrong", and there are a couple of other common ones for the standard ways programs can be externally terminated, but most programs using will provide a list of potential codes in their documentation if they use this mechanism.
+This is normally used in automated scripts, as it allows programs to commmunicate whether or not a process succeeded, so that the script can either terminate there or perform some form of error handling.
